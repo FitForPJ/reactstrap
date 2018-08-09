@@ -1,5 +1,6 @@
 
 import React from 'react';
+import './header.css';
 import {
   Collapse,
   Navbar,
@@ -11,7 +12,6 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  Container,
   DropdownItem } from 'reactstrap';
 
 export default class Head extends React.Component {
@@ -30,8 +30,8 @@ export default class Head extends React.Component {
   }
   render() {
     return (
-
-        <Navbar  color="success" light  expand="md">
+      <div>
+        <Navbar color="success" dark expand="md">
           <NavbarBrand href="/">API ISLAND</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -62,7 +62,7 @@ export default class Head extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-    
+      </div>
     );
   }
 }

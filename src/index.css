@@ -1,5 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  padding: 0%;
+}
+
+.container .row {
+  margin-bottom: 0%;
+}
+
+.container .row > [class^="col-"] {
+  padding-top: .0rem;
+  padding-bottom: .0rem;
+  background-color: #E5EDF5;
+  border: 1px solid #C9C1D5;
+  color: #5F5F5F;
 }

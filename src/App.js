@@ -1,38 +1,32 @@
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
 import Head from './Header';
+import Menu from './Menu';
 import './App.css';
+import {Container, Row,Col} from 'reactstrap';
 
-export default class Home extends React.Component {
+
+
+
+class Home extends React.Component {
+  
+  
   render() {
-    return (
-      <Container fluid>
-        <div className="full-w p-0 m-0">
-          <Col  xs="12" sm="12"><Head/></Col>
-        </div>
-     
+    return (      
+      <Container fluid className="m-p-0">
         <Row>
-          <Col xs="2">.col-6</Col>
-          <Col xs="10">.col-6</Col>
+          <Col>
+            <Head/>
+          </Col>
         </Row>
         <Row>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-          <Col sm="4">.col-sm-4</Col>
-        </Row>
-        <Row>
-          <Col sm={{ size: 6, order: 2, offset: 1 }}>.col-sm-6 .col-sm-order-2 .col-sm-offset-2</Col>
-        </Row>
-        <Row>
-          <Col sm="12" md={{ size: 8, offset: 2 }}>.col-sm-12 .col-md-6 .col-md-offset-3</Col>
-        </Row>
-        <Row>
-          <Col sm={{ size: 'auto', offset: 1 }}>.col-sm .col-sm-offset-1</Col>
-          <Col sm={{ size: 'auto', offset: 1 }}>.col-sm .col-sm-offset-1</Col>
+        <Col xs="6" sm="2">
+         <Menu/>
+        </Col>
+          <Col xs="6" sm="10">.col-6 .col-sm-4</Col>
         </Row>
       </Container>
     );
   }
 }
+
+export default Home;
