@@ -1,7 +1,7 @@
 import React from 'react';
 import 'rc-menu/assets/index.css';
 import {Nav, NavItem, NavLink,  Dropdown, DropdownItem, DropdownToggle, DropdownMenu} from 'reactstrap';
-import './App.css'
+import './menu.css'
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
 export default class MenuNav extends React.Component {
     constructor(props) {
@@ -40,8 +40,9 @@ export default class MenuNav extends React.Component {
             mode="inline"
             onOpenChange={this.onOpenChange}
             openKeys={this.state.openKeys}
+            className="m-p-0 border-success"
           >
-              <MenuItem key="1-1">
+              <MenuItem key="1-1"s>
                  <a exact href="/" >Home</a>
               </MenuItem>
              

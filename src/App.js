@@ -25,10 +25,10 @@ class Home extends React.Component {
           </Col>
         </Row>
         <Row>
-        <Col xs="12" sm="12" md="3" lg="2" >
+        <Col xs="12" sm="12" md="3" lg="2" className="m-p-0">
          <Menu/>
         </Col>
-          <Col xs="12" sm="12" md="9" lg="10" >
+          <Col xs="12" sm="12" md="9" lg="10" className="m-p-0" >
             <Route exact path="/" component={Main} />
             <Route path="/add" component={About} />
             <Route path="/edit" component={Post} />

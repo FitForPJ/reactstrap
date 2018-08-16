@@ -3,7 +3,7 @@ import React from 'react';
 class HomeDetial extends React.Component{
     render(){
         return(
-            <div>
+            <div className="border border-primary">
                 HomeDetial
             </div>
         )
