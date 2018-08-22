@@ -1,6 +1,6 @@
 import React from 'react';
 import 'rc-menu/assets/index.css';
-import {Nav, NavItem, NavLink,  Dropdown, DropdownItem, DropdownToggle, DropdownMenu} from 'reactstrap';
+
 import './menu.css'
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
 export default class MenuNav extends React.Component {
@@ -25,10 +25,10 @@ export default class MenuNav extends React.Component {
       }
     
       onOpenChange = (openKeys) => {
-        console.log('onOpenChange', openKeys);
+        
         this.setState({
           openKeys,
-        });
+        })
       }
     
 
@@ -43,7 +43,7 @@ export default class MenuNav extends React.Component {
             className="m-p-0 border-success"
           >
               <MenuItem key="1-1"s>
-                 <a exact href="/" >Home</a>
+                 <a  href="/" >Home</a>
               </MenuItem>
              
             <SubMenu key="2" title="Manage">
